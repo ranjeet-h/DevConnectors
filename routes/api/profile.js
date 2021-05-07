@@ -112,8 +112,8 @@ router.post(
   }
 );
 
-// @route GET api/profile
-//@desc Get all profiles
+//@route   GET api/profile
+//@desc    Get all profiles
 //@access  Public
 
 router.get("/", async (req, res) => {
@@ -126,9 +126,9 @@ router.get("/", async (req, res) => {
   }
 });
 
-// @route GET api/profile/user/user:user_id
-//@desc Get profile by user id
-//@access  Public
+//@route    GET api/profile/user/user:user_id
+//@desc     Get profile by user id
+//@access   Public
 
 router.get("/user/:user_id", async (req, res) => {
   try {
