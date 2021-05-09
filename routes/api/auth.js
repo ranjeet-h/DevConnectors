@@ -29,7 +29,7 @@ router.post(
   "/",
   [
     check("email", "Please include a valid email").isEmail(),
-    check("password", "Please is required").exists(),
+    check("password", "Password is required").exists(),
   ],
   async (req, res) => {
     const errors = validationResult(req);
@@ -41,11 +41,11 @@ router.post(
 
     try {
       // see if user exists
-      let user = await User.findOne({ email }); //this checks email === eamil because same name we used single      email  name otherwise we need to eail:email
+      let user = await User.findOne({ email }); //this checks email === eamil because same name we used single email name otherwise we need to email:email
 
       if (!user) {
         return res.status(400).json({
-          errors: [{ msg: "Invalid Credetials or User don't exists." }],
+          errors: [{ msg: "Invalid Credentials or User does't exists." }],
         });
       }
 
@@ -53,10 +53,10 @@ router.post(
 
       if (!isMatch) {
         return res.status(400).json({
-          errors: [{ msg: "Invalid Credetials or User don't exists." }],
+          errors: [{ msg: "Invalid Credentials or User does't exists." }],
         });
       }
-      //return jason webtoken
+      //return json webtoken
       const payload = {
         user: {
           id: user.id,
