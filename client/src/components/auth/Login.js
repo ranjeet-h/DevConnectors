@@ -20,7 +20,7 @@ const Login = ({ login, isAuthenticated }) => {
 
     login(email, password);
 
-    console.log("success");
+    // console.log("success");
   };
 
   // console.log(formData);
