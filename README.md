@@ -1,4 +1,4 @@
-# Facebook NextJs Clone
+# DevConnector Social Medial App
 
 This is a MERN stack Social Media app for Develpoers, Build with React,NodeJs,ExpressJs,MongoDB. Used SCSS for styling.
 
