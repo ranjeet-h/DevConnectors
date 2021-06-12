@@ -5,7 +5,7 @@
 /client/node_modules
 /.pnp
 .pnp.js
-/config/default.json
+/config
 
 # testing
 /coverage
@@ -14,7 +14,6 @@
 /build
 
 # misc
-/config
 .DS_Store
 .env.local
 .env.development.local
